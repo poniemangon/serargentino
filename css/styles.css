@@ -20,7 +20,7 @@ h2 { font-size: 33px; font-family: 'Merriweather', serif; font-weight: 700;}
 
 h3 {  font-size: 20px; font-family: 'Merriweather', serif; font-weight: 700;} 
 
-h4 {  font-size: 16px; font-family: 'Merriweather', serif; font-weight: 700;}
+h5 {  font-size: 16px; font-family: 'Merriweather', serif; font-weight: 700;}
 
 p { font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 300; margin: 0;}
 
@@ -28,13 +28,13 @@ a { font-size: 18px; font-family: 'Merriweather', serif; font-weight: 700; text-
 
 button, input { font-size: 13px; font-family: 'Open Sans', sans-serif; font-weight: 300; }
 
-h4 {  font-size: 18px; font-family: 'Merriweather', serif; font-weight: 700;}
+h4 {  font-size: 18px; font-family: 'Open-sans', sans-serif; font-weight: 700; }
 
 input { background-color: transparent; border: 0;}
 
 .d-flex {display: flex;}
 
-.space-around {justify-content: space-around;}
+.space-between {justify-content: space-between;}
 
 .flex-end {justify-content: flex-end;}
 
@@ -51,6 +51,16 @@ input { background-color: transparent; border: 0;}
 .toolbar-section .col1 {column-gap: 10px;}
 .toolbar-section .col2 {column-gap: 10px;}
 .toolbar-section .col2 i {color: var(--blue);}
+
+.toolbar-section .col3 {column-gap: 10px; }
+
+.toolbar-section .col3 a {font-size: 13px;}
+
+.toolbar-section .col4 {column-gap: 10px; border-left: 1px solid var(--lightblue); padding-left: 30px;}
+.toolbar-section .col4 i {color: var(--blue); }
+.toolbar-section .col4 p {color: black;}
+
+.toolbar-section .active {font-weight: 800; margin: 0;}
 
 .toolbar-section .ser-arg {column-gap: 5px;}
 
@@ -81,3 +91,18 @@ input { background-color: transparent; border: 0;}
 .navbar-section .carrito {color: var(--blue); margin-top: 16px;}
 
 .navbar-section .input-wrap { column-gap: 20px;}
+
+.navbar-section .container.mobile {display: none}
+
+@media (max-width: 1300px){
+    .toolbar-section {display: none;}
+    .navbar-section .container.desktop {display: none;}
+    .navbar-section .container.mobile {display: block;  }
+
+    .navbar-section .container.mobile .menu {width: 100%;}
+    .navbar-section .container.mobile .menu i{font-size: 30px; color: var(--blue);}
+    .navbar-section .container.mobile .burgermenu div.d-flex{margin: auto; justify-content: center; }
+    .navbar-section .container.mobile .burgermenu ul {display: flex; flex-direction: column; row-gap: 20px;}
+    
+    .navbar-section .container.mobile .burgermenu {display: none;}
+}

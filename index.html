@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Open+Sans:wght@300;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Open+Sans:wght@300;600;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -40,20 +40,27 @@
               <a href="">Salir</a>
             </div>
             <div class="col2 d-flex align-center">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="col3 d-flex align-center">
-                
+              <a class="active" href="">EN</a>
+              <a href="">ES</a>
+              <a href="">CH</a>
             </div>
+            <div class="col4 d-flex align-center">
+              <h4 class="active">27°C</h4>
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <div class="col5"><p>Buenos Aires - Nublado - Miércoles 08 de enero</p></div>
           </div>
         </div>
       </section>
       <section class="navbar-section">
-        <div class="container">
-          <div class="d-flex space-around">
+        <div class="container desktop">
+          <div class="d-flex space-between">
             <img class="logo" src="./images/logo.png" alt="" />
             <nav>
               <ul class="d-flex">
@@ -80,12 +87,49 @@
             </div>
           </div>
         </div>
+        <div class="container mobile">
+          <div class="d-flex space-between menu align-center">
+            <img class="logo" src="./images/logo.png" alt="" />
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="burgermenu">
+            <div class="d-flex">
+              <ul>
+                <div class="d-flex input-wrap">
+                  <div class="input">
+                    <input type="text" placeholder="Buscar..." /><i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <i class="fa-solid fa-cart-shopping carrito"></i>
+                  
+                </div>
+                
+                <li><i class="fa-solid fa-house iconhome"></i><a href="">Turismo</a></li>
+                <li>
+                  <a href="">Paladar <i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="">Tienda <i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li><a href="">Argentina</a></li>
+                <li><a href="">Gente</a></li>
+                <li><a href="">Agendá</a></li>
+              </ul>
+            </div>
+            <div></div>
+          </div>
+        </div>
       </section>
     </header>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
