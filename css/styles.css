@@ -1,0 +1,83 @@
+:root {
+    --blue: #2e68ad;
+    --grey: #333333;
+    --lightblue: #bfc5cb;
+}
+
+* {margin: 0; padding: 0;}
+
+button { cursor: pointer;}
+
+img { display: block; max-width: 100%;}
+
+li { list-style-type: none; }
+
+.container { width: 90% ; max-width: 1200px; }
+
+h1 { font-size: 60px; font-family: 'Merriweather', serif; font-weight: 700;}
+
+h2 { font-size: 33px; font-family: 'Merriweather', serif; font-weight: 700;}
+
+h3 {  font-size: 20px; font-family: 'Merriweather', serif; font-weight: 700;} 
+
+h4 {  font-size: 16px; font-family: 'Merriweather', serif; font-weight: 700;}
+
+p { font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 300; margin: 0;}
+
+a { font-size: 18px; font-family: 'Merriweather', serif; font-weight: 700; text-decoration: none; color: var(--blue);}
+
+button, input { font-size: 13px; font-family: 'Open Sans', sans-serif; font-weight: 300; }
+
+h4 {  font-size: 18px; font-family: 'Merriweather', serif; font-weight: 700;}
+
+input { background-color: transparent; border: 0;}
+
+.d-flex {display: flex;}
+
+.space-around {justify-content: space-around;}
+
+.flex-end {justify-content: flex-end;}
+
+.align-center {align-items: center;}
+
+/* header */
+
+
+
+.toolbar-section {padding: 10px 0; border-bottom: 1px solid var(--lightblue);}
+
+.toolbar-section .wrapper {column-gap: 40px;}
+
+.toolbar-section .col1 {column-gap: 10px;}
+.toolbar-section .col2 {column-gap: 10px;}
+.toolbar-section .col2 i {color: var(--blue);}
+
+.toolbar-section .ser-arg {column-gap: 5px;}
+
+.toolbar-section .ser-arg p {color: var(--blue);}
+
+.toolbar-section a {color: black; font-size: 14px; font-family: 'Open Sans', sans-serif; font-weight: 300; margin: 0;}
+
+.navbar-section {padding: 30px 0;}
+
+.navbar-section .logo {width: 250px;}
+
+.navbar-section .iconhome {color: var(--blue); margin-top: 5px;}
+
+.navbar-section .input {border-bottom: 1px solid var(--lightblue); padding-top: 11px; }
+
+.navbar-section .container {padding: 0;}
+
+.navbar-section .input i {color: var(--blue); font-weight: bold;}
+
+.navbar-section .input ::placeholder {color: black;}
+
+.navbar-section ul .fa-chevron-down {font-size: 10px; color: black;}
+
+.navbar-section nav {padding-top: 16px;}
+
+.navbar-section ul { column-gap: 20px;}
+
+.navbar-section .carrito {color: var(--blue); margin-top: 16px;}
+
+.navbar-section .input-wrap { column-gap: 20px;}
